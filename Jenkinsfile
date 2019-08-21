@@ -5,14 +5,6 @@ pipeline {
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
-
-
-    options {
-        // disableConcurrentBuilds()
-        // parallelsAlwaysFailFast()
-        timestamps()
-    }
-
     stages {
         stage('Prep steps') {
             steps {
