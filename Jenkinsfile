@@ -10,7 +10,7 @@ pipeline {
     options {
         // disableConcurrentBuilds()
         // parallelsAlwaysFailFast()
-        timestamps()
+        //timestamps()
     }
 
     stages {
