@@ -5,14 +5,21 @@ pipeline {
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
+
+
+    options {
+        // disableConcurrentBuilds()
+        // parallelsAlwaysFailFast()
+        timestamps()
+    }
+
     stages {
-        stage('Debug steps') {
+        stage('Prep steps') {
             steps {
                 script {
                     sh 'echo Hi'
                     sh 'printenv'
-                    sh 'uname -a'
-                    sh 'id'
+                    sh 'ls -al /tmp'
                 }
             }
         }
