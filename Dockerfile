@@ -4,6 +4,7 @@ ARG GID=977
 ARG DOCKER_DOWNLOAD_HOST=download.docker.com
 ARG DOCKER_VERSION=18.03.1-ce
 
+RUN touch /tmp/dockertest
 RUN apk update && \
     apk add --update make && \
     apk -v --update add \
