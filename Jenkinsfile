@@ -7,11 +7,11 @@ pipeline {
     }
 
 
-    options {
-        // disableConcurrentBuilds()
-        // parallelsAlwaysFailFast()
-        //timestamps()
-    }
+    // options {
+    //     // disableConcurrentBuilds()
+    //     // parallelsAlwaysFailFast()
+    //     //timestamps()
+    // }
 
     stages {
         stage('Prep steps') {
