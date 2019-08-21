@@ -6,11 +6,13 @@ pipeline {
         }
     }
     stages {
-        stage('Prep steps') {
+        stage('Debug steps') {
             steps {
                 script {
                     sh 'echo Hi'
                     sh 'printenv'
+                    sh 'uname -a'
+                    sh 'id'
                 }
             }
         }
